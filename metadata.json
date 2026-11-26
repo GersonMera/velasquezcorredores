@@ -1,0 +1,6 @@
+{
+  "name": "SOATVELASQUEZ.COM — Velasquez Corredores de Seguros",
+  "description": "Plataforma digital de emisión de SOAT 24/7 y corretaje integral de seguros en Pucallpa, Perú con el respaldo de Velasquez Corredores de Seguros E.I.R.L.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

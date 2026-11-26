@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-azul-noche: #000A73;
+  --color-azul-principal: #14568D;
+  --color-azul-electrico: #006DF8;
+  --color-rojo-cta: #A81A26;
+  --color-rojo-marca: #FA0001;
+  --color-gris-superficie: #F4F6FA;
+  --color-tinta-principal: #101010;
+  --color-tinta-secundaria: #535353;
+
+  --font-display: "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-sans: "Open Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-tinta-principal);
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom hairline scrollbars for horizontal mobile tab bar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

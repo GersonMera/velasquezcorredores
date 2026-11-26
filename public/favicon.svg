@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="favTrap" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#006DF8" />
+      <stop offset="100%" stopColor="#14568D" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#000A73" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5" />
+  <g transform="translate(32, 32) scale(0.68) translate(-42, -23)">
+    <!-- Blue perspective trapezoidal base -->
+    <polygon points="15,25 56,25 74,42 5,42" fill="url(#favTrap)" />
+    <!-- Sweeping curved aerodynamic red V checkmark -->
+    <path d="M11 19 C22 19 29 27 33 36 C43 21 57 10 79 4 C65 12 49 23 35 41 L30 41 C26 30 20 23 11 19 Z" fill="#FA0001" />
+    <!-- Upper aerodynamic velocity swoop accent -->
+    <path d="M42 18 C52 10 64 5 76 3 C64 7 53 13 44 20 Z" fill="#FF4D4D" opacity="0.9" />
+  </g>
+</svg>
